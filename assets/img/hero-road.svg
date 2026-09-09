@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="asphalt" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#41474f"/>
+      <stop offset="1" stop-color="#1e2228"/>
+    </linearGradient>
+    <linearGradient id="field" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#6a7a5f"/>
+      <stop offset="1" stop-color="#3c4736"/>
+    </linearGradient>
+  </defs>
+
+  <!-- ground / fields -->
+  <rect x="0" y="452" width="1600" height="448" fill="url(#field)"/>
+  <!-- distant hills -->
+  <path d="M0,452 Q260,398 560,438 T1120,430 Q1360,412 1600,446 L1600,470 L0,470 Z" fill="#55684f" opacity="0.9"/>
+  <path d="M0,470 Q400,440 820,462 T1600,462 L1600,486 L0,486 Z" fill="#4c5c47" opacity="0.8"/>
+
+  <!-- road -->
+  <path d="M726,452 L874,452 L1430,900 L150,900 Z" fill="url(#asphalt)"/>
+  <!-- shoulder lines (outer white) -->
+  <path d="M733,452 L747,452 L250,900 L150,900 Z" fill="#e9ecef" opacity="0.82"/>
+  <path d="M853,452 L867,452 L1430,900 L1330,900 Z" fill="#e9ecef" opacity="0.82"/>
+
+  <!-- centre line dashes (yellow) -->
+  <g fill="#f2b705">
+    <polygon points="797,454 803,454 804,466 796,466"/>
+    <polygon points="795,486 805,486 807,508 793,508"/>
+    <polygon points="791,536 809,536 813,572 787,572"/>
+    <polygon points="785,610 815,610 822,668 778,668"/>
+    <polygon points="776,720 824,720 835,800 765,800"/>
+    <polygon points="765,842 835,842 850,900 750,900"/>
+  </g>
+</svg>
